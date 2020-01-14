@@ -1,66 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
-</head>
-<body>
-    
+<html>
+  <title>HipMeal</title>
+  <head>
+    <style>
+      body{
+      margin: 40px;
+      background-color: #494949;
+      }
+  
+      .content{
+      grid-area: content;
+      }
+      .header{
+      grid-area: header;
+      }
+      .footer{
+      grid-area: footer;
+      }
+      .wrapper{
+      color: #444;
+      display: grid;
+      grid-gap: 1em;
+      justify-items: center;
+      grid-template-areas:
+      "header"
+      "content"
+      "footer"
+      }
+      @media only screen and (min-width: 500px){
+        .wrapper{
+        grid-template-columns: auto;
+        grid-template-areas:
+        "header"
+        "content"
+        "footer";
+        }
+      }
+      @media only screen and (min-width: 600px){
+      .wrapper{
+      grid-gap: 20px;
+      grid-template-columns: auto;
+      grid-template-areas:
+      "header"
+      "content"
+      "footer";
+      }
+      }
+      .box{
+      background-color: #444;
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 150%; 
 
-    <main class="wrapper">
-        <section class="hero">
-          <h1>You thirsty?</h1>
-          <article>
-            <p>Explore local breweries with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global death.</p>
-            <a href="#breweries">Browse Breweries</a>
-          </article>
+      max-width: 600px;
+
+      }
+      .header,
+      .footer{
+      background-color: #8ebf42;
+      max-width: 600px;
+      }
+
+
+
+ .leading {
+   height: 240px;
+   margin-bottom: 30px;
+   padding: 30px;
+   color: white;
+   background-color: #333;
+   background-size: cover;
+   color: white;
+   text-shadow: 0px 0px 5px #000;
+   max-width: 970px;
+ }
+ 
+ .leading-bigtext {
+   margin-right: 40px;
+   font-weight: bold;
+   font-size: 7vw;
+ }
+ 
+ @media (min-width: 700px) {
+   .leading-bigtext {
+     font-size: 7vw;
+   }
+ }
+ 
+ .leading-text {
+   max-width: 900px;
+   font-size: 1.2em;
+   line-height: 1.4em;
+ }
+
+ 
+     
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box header">
+        <section class="leading">
+          <p class="leading-bigtext">Welcome by HipMeal</p>
+          <p class="leading-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae semper quam. Praesent lobortis tellus quis erat condimentum, a bibendum tortor volutpat.</p>
         </section>
-        <section class="breweries" id="breweries">
-          <ul>
-            <li>
-              <figure>
-                <!-- Photo by Quentin Dr on Unsplash -->
-                <img src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e" alt="Several hands holding beer glasses">
-                <figcaption><h3>Billions upon billions</h3></figcaption>
-              </figure>
-              <p>
-                Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?
-              </p>
-              <a href="#">Visit Website</a>
-            </li>
-            <li>
-              <figure>
-                <!-- Photo by Drew Farwell on Unsplash -->
-                <img src="https://images.unsplash.com/photo-1513309914637-65c20a5962e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80" alt="Several friends doing a toast">
-                <figcaption><h3>Drake Equation</h3></figcaption>
-              </figure>
-              <p>
-                Another world citizens of distant epochs from which we spring descended from astronomers Orion's sword shores of the cosmic ocean.
-              </p>
-              <a href="#">Visit Website</a>
-            </li>
-            <li>
-              <figure>
-                <!-- Photo by Rawpixel on Unsplash -->
-                <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Three different glasses of beer">
-                <figcaption><h3>Vast cosmic arena</h3></figcaption>
-              </figure>
-              <p>
-                Galaxies the ash of stellar alchemy prime number science inconspicuous motes of rock and gas brain is the seed of intelligence.
-              </p>
-              <a href="#">Visit Website</a>
-            </li>
-          </ul>
-        </section>
-      </main>
-      <footer>
-        <p>&copy; 2019. Made with ❤ and CSS Grid.</p>
-      </footer>
-
-
-
-</body>
+      </div>
+      <div class="box content">
+        <img class="article-img" src="img/app.png" alt=" " />
+        <h1 class="article-title">soon on the App and Google Store</h1>
+      </div>
+      <div class="box footer">&copy; HipMeal 2020</div>
+    </div>
+  </body>
 </html>
