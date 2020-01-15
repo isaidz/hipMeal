@@ -20,6 +20,7 @@ body {
     grid-template-columns: auto;
     grid-template-areas: "header" "content" "footer";
   }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -124,7 +125,8 @@ html {
 /*    ---------   Foodwast Page -----------    */
 .foodwaste {
   text-align: left;
-  padding: 30px;
+  padding: 5%;
+  margin: 5%;
   color: white;
   background-color: rgb(58, 133, 77);
   background-size: cover;
@@ -169,4 +171,10 @@ html {
 .bildinhalt{
   font-style: italic; 
   font-size: 0.9em;
+}
+
+
+.foodwaste img{
+  float: none;
+  width: 90%;
 }
