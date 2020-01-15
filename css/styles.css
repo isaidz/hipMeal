@@ -162,7 +162,7 @@ html {
   color: beige;
 }
 
-.footer a, blockquote a .bildinhalt , span{
+.footer a, blockquote > a  , span{
   margin: 3em;
   color: white;
   text-decoration: white;
